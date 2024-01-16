@@ -18,7 +18,7 @@ ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser
 WORKDIR /usr/src/packages
 
 # Copy root package.json and lockfile
-COPY package.json yarn.loc[k] ./
+COPY package.json yarn.loc[k] .yarnrc ./
 
 # Copy components package.json
 COPY packages/components/package.json ./packages/components/package.json
